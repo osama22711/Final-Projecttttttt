@@ -16,7 +16,7 @@ namespace Final_Project.O.S.A
         {
             InitializeComponent();
             SidePanel.Height = button1.Height;
-            BringToFront();
+            home1.BringToFront();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,7 +27,18 @@ namespace Final_Project.O.S.A
         private void button1_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button1.Height;
-            BringToFront();
+            home1.BringToFront();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button2.Height;
+            choose_a_car1.BringToFront();
+        }
+
+        private void SidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

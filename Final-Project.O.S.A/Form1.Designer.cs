@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.choose_a_car1 = new Final_Project.O.S.A.Choose_a_car();
             this.home1 = new Final_Project.O.S.A.Home();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,6 +66,7 @@
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(10, 57);
             this.SidePanel.TabIndex = 2;
+            this.SidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.SidePanel_Paint);
             // 
             // panel2
             // 
@@ -138,6 +140,7 @@
             this.button2.Text = "     Choose a car";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -166,6 +169,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // choose_a_car1
+            // 
+            this.choose_a_car1.Location = new System.Drawing.Point(210, 12);
+            this.choose_a_car1.Name = "choose_a_car1";
+            this.choose_a_car1.Size = new System.Drawing.Size(748, 536);
+            this.choose_a_car1.TabIndex = 3;
+            // 
             // home1
             // 
             this.home1.Location = new System.Drawing.Point(210, 12);
@@ -178,6 +188,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 548);
+            this.Controls.Add(this.choose_a_car1);
             this.Controls.Add(this.home1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -203,6 +214,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel SidePanel;
         private Home home1;
+        private Choose_a_car choose_a_car1;
     }
 }
 
