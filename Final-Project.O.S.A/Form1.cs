@@ -15,6 +15,19 @@ namespace Final_Project.O.S.A
         public Form1()
         {
             InitializeComponent();
+            SidePanel.Height = button1.Height;
+            BringToFront();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button1.Height;
+            BringToFront();
         }
     }
 }
