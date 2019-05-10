@@ -12,6 +12,16 @@ namespace Final_Project.O.S.A
 {
     public partial class Home : UserControl 
     {
+        private static Home _obj;
+        public static Home Instance
+        {
+            get
+            {
+                if (_obj == null)
+                    _obj = new Home();
+                return _obj;
+            }
+        }
         public Home()
         {
             InitializeComponent();
@@ -80,17 +90,36 @@ namespace Final_Project.O.S.A
 
         }
 
+        private void btn_Click(object sender, EventArgs e)
+        {
+            if (PickupComboBox.Text == "")
+            {
+                MessageBox.Show("Please enter all your information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!Form1.Instance.PnlContainer.Controls.ContainsKey("Choose a car"))
+            {
+                Choose_a_car c1 = new Choose_a_car();
+                c1.Dock = DockStyle.Fill;
+                Form1.Instance.PnlContainer.Controls.Add(c1);
+            }
+            Form1.Instance.PnlContainer.Controls["Choose a car"].BringToFront();
+            Form1.Instance.BackButton.Visible = true;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if(PickupComboBox.Text=="")
+            if (PickupComboBox.Text == "")
             {
-               MessageBox.Show("Please enter all your information", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter all your information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            else if (!Form1.Instance.PnlContainer.Controls.ContainsKey("Choose a car"))
             {
-                Form1 f1 = new Form1();
-                f1.choose_a_car1.BringToFront();
+                Choose_a_car c1 = new Choose_a_car();
+                c1.Dock = DockStyle.Fill;
+                Form1.Instance.PnlContainer.Controls.Add(c1);
             }
+            //Form1.Instance.PnlContainer.Controls["Choose a car"].BringToFront();
+            Form1.Instance.BackButton.Visible = true;
         }
     }
 }

@@ -24,5 +24,19 @@ namespace Final_Project.O.S.A
                 MessageBox.Show("Please check one of the cars", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            CarsDatabase car1 = new CarsDatabase();
+            for (int i = 0; i < 8; i++)
+            {
+                if(textBox1.Text == car1.dataGridView1.Rows[i].Cells[0].Value.ToString())
+                {
+                    Panel1CompanyTextBox.Text = car1.dataGridView1.Rows[i].Cells[0].Value.ToString();
+                    Panel1ModelTextBox.Text = car1.dataGridView1.Rows[i].Cells[1].Value.ToString();
+                    Panel1PictureBox.Image = (System.Drawing.Image)car1.dataGridView1.Rows[i].Cells[2].Value;
+                }
+            }
+        }
     }
 }

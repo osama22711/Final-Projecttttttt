@@ -12,12 +12,38 @@ namespace Final_Project.O.S.A
 {
     public partial class Form1 : Form
     {
+        static Form1 _obj;
+        public static Form1 Instance
+        {
+            get
+            {
+                if (_obj == null)
+                {
+                    _obj = new Form1();
+                }
+                return _obj;
+            }
+        }
+        public Panel PnlContainer
+        {
+            get
+            {
+                return MainPanel;
+            }
+            set
+            {
+                MainPanel = value;
+            }
+        }
+        public Button BackButton
+        { get {  return btn ; }
+          set { btn = value ; }
+        }
         public Form1()
         {
             InitializeComponent();
             SidePanel.Height = button1.Height;
             SidePanel.Top = button1.Top;
-            home1.BringToFront();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,14 +55,12 @@ namespace Final_Project.O.S.A
         {
             SidePanel.Height = button1.Height;
             SidePanel.Top = button1.Top;
-            home1.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button2.Height;
             SidePanel.Top = button2.Top;
-            choose_a_car1.BringToFront();
         }
 
         private void SidePanel_Paint(object sender, PaintEventArgs e)
@@ -48,21 +72,40 @@ namespace Final_Project.O.S.A
         {
             SidePanel.Height = button3.Height;
             SidePanel.Top = button3.Top;
-            rental_Options1.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button4.Height;
             SidePanel.Top = button4.Top;
-            information1.BringToFront();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button5.Height;
             SidePanel.Top = button5.Top;
-            confirmation1.BringToFront();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //btn.Visible = false;
+            _obj = this;
+            Home h1 = new Home();
+            h1.Dock = DockStyle.Fill;
+            MainPanel.Controls.Add(h1);
+            h1.Show();
+        }
+        private void btn_Click_1(object sender, EventArgs e)
+        {
+            MainPanel.Controls["Home"].BringToFront();
+            if (!MainPanel.Controls.Contains(Home.Instance))
+            {
+                MainPanel.Controls.Add(Home.Instance);
+                Home.Instance.Dock = DockStyle.Fill;
+                Home.Instance.BringToFront();
+            }
+            else
+            Home.Instance.BringToFront();
         }
     }
 }
