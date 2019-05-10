@@ -52,6 +52,12 @@
     <Compile Include="Choose a car.Designer.cs">
       <DependentUpon>Choose a car.cs</DependentUpon>
     </Compile>
+    <Compile Include="Confirmation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirmation.Designer.cs">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="Choose a car.resx">
       <DependentUpon>Choose a car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmation.resx">
+      <DependentUpon>Confirmation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -46,5 +46,10 @@ namespace Final_Project.O.S.A
             SidePanel.Height = button3.Height;
             rental_Options1.BringToFront();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
