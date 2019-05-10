@@ -15,6 +15,10 @@ namespace Final_Project.O.S.A
         public Home()
         {
             InitializeComponent();
+            ReturnLabel.Hide();
+            ReturnDatePicker.Hide();
+            ReturnDateLabel.Hide();
+            ReturnComboBox.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -25,6 +29,20 @@ namespace Final_Project.O.S.A
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             //make checkbox when checked remove the other date time picker and location picker
+            if(AnotherLocCheckbox.Checked==true)
+            {
+                ReturnLabel.Show();
+                ReturnDatePicker.Show();
+                ReturnDateLabel.Show();
+                ReturnComboBox.Show();
+            }
+            else
+            {
+                ReturnLabel.Hide();
+                ReturnDatePicker.Hide();
+                ReturnDateLabel.Hide();
+                ReturnComboBox.Hide();
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -60,6 +78,11 @@ namespace Final_Project.O.S.A
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(PickupComboBox.Text==""|| ReturnDatePicker.ValueChanged==false)
         }
     }
 }
