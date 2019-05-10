@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Final_Project.O.S.A
 {
-    public partial class Choose_a_car : UserControl
+    public partial class Confirmation : UserControl
     {
-        public Choose_a_car()
+        public Confirmation()
         {
             InitializeComponent();
         }
