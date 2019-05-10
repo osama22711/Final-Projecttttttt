@@ -52,7 +52,7 @@ namespace Final_Project.O.S.A
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-
+            ReturnDatePicker.MinDate = DateTime.Now.Date;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace Final_Project.O.S.A
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-
+            PickupDatePicker.MinDate = DateTime.Now.Date;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -82,7 +82,10 @@ namespace Final_Project.O.S.A
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(PickupComboBox.Text==""|| ReturnDatePicker.ValueChanged==false)
+            if(PickupComboBox.Text=="")
+            {
+               MessageBox.Show("Please enter all your information", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
