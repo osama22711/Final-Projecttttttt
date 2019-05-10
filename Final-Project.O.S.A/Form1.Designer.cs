@@ -30,15 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.choose_a_car1 = new Final_Project.O.S.A.Choose_a_car();
             this.home1 = new Final_Project.O.S.A.Home();
+            this.rental_Options1 = new Final_Project.O.S.A.Rental_Options();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,15 +68,6 @@
             this.SidePanel.Size = new System.Drawing.Size(10, 57);
             this.SidePanel.TabIndex = 2;
             this.SidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.SidePanel_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(210, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(748, 15);
-            this.panel2.TabIndex = 1;
             // 
             // button5
             // 
@@ -124,6 +116,7 @@
             this.button3.Text = "   Rental Options";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -169,6 +162,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(210, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(748, 15);
+            this.panel2.TabIndex = 1;
+            // 
             // choose_a_car1
             // 
             this.choose_a_car1.Location = new System.Drawing.Point(210, 12);
@@ -183,11 +185,19 @@
             this.home1.Size = new System.Drawing.Size(748, 536);
             this.home1.TabIndex = 2;
             // 
+            // rental_Options1
+            // 
+            this.rental_Options1.Location = new System.Drawing.Point(210, 12);
+            this.rental_Options1.Name = "rental_Options1";
+            this.rental_Options1.Size = new System.Drawing.Size(748, 536);
+            this.rental_Options1.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 548);
+            this.Controls.Add(this.rental_Options1);
             this.Controls.Add(this.choose_a_car1);
             this.Controls.Add(this.home1);
             this.Controls.Add(this.panel2);
@@ -215,6 +225,7 @@
         private System.Windows.Forms.Panel SidePanel;
         private Home home1;
         private Choose_a_car choose_a_car1;
+        private Rental_Options rental_Options1;
     }
 }
 
