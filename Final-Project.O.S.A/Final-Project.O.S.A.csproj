@@ -91,6 +91,12 @@
     <Compile Include="Rental Options.Designer.cs">
       <DependentUpon>Rental Options.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDatabase.Designer.cs">
+      <DependentUpon>UserDatabase.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CarsDatabase.resx">
       <DependentUpon>CarsDatabase.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +127,9 @@
     </Compile>
     <EmbeddedResource Include="Rental Options.resx">
       <DependentUpon>Rental Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDatabase.resx">
+      <DependentUpon>UserDatabase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -179,6 +188,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BMW m4.jxr" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BMW c5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BMW x3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BMW m4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercedes GLC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercedes AMG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercedes AMG S.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ford Focus-8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ford EcoSport.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ford-Fusion-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
