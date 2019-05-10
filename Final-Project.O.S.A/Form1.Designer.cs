@@ -243,11 +243,11 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel SidePanel;
-        private Home home1;
-        private Choose_a_car choose_a_car1;
-        private Rental_Options rental_Options1;
-        private Information information1;
-        private Confirmation confirmation1;
+        public Home home1;
+        public Choose_a_car choose_a_car1;
+        public Rental_Options rental_Options1;
+        public Information information1;
+        public Confirmation confirmation1;
     }
 }
 

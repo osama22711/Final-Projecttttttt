@@ -247,6 +247,7 @@
             this.InformationButton.TabIndex = 37;
             this.InformationButton.Text = "Confirm";
             this.InformationButton.UseVisualStyleBackColor = true;
+            this.InformationButton.Click += new System.EventHandler(this.InformationButton_Click);
             // 
             // pictureBox1
             // 

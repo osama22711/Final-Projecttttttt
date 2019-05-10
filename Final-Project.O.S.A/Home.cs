@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Final_Project.O.S.A
 {
-    public partial class Home : UserControl
+    public partial class Home : UserControl 
     {
         public Home()
         {
@@ -85,6 +85,11 @@ namespace Final_Project.O.S.A
             if(PickupComboBox.Text=="")
             {
                MessageBox.Show("Please enter all your information", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Form1 f1 = new Form1();
+                f1.choose_a_car1.BringToFront();
             }
         }
     }

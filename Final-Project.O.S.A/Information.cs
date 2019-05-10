@@ -21,5 +21,17 @@ namespace Final_Project.O.S.A
         {
 
         }
+
+        private void InformationButton_Click(object sender, EventArgs e)
+        {
+            if (InfoFname.Text == "" || InfoLName.Text == "" || InfoEmail.Text == "" || InfoExpireMonth.Text == "" || InfoExpireYear.Text == "" || InfoCardNumber.Text == "" || InfoCardType.Text == "")
+            {
+                MessageBox.Show("Please enter all your information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(InformationCheckbox.Checked==false)
+            {
+                MessageBox.Show("Please read the policies", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

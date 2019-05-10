@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarsDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarsDatabase.Designer.cs">
+      <DependentUpon>CarsDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Choose a car.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -64,6 +70,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,6 +91,9 @@
     <Compile Include="Rental Options.Designer.cs">
       <DependentUpon>Rental Options.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CarsDatabase.resx">
+      <DependentUpon>CarsDatabase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Choose a car.resx">
       <DependentUpon>Choose a car.cs</DependentUpon>
     </EmbeddedResource>

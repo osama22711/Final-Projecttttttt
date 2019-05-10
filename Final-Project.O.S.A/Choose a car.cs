@@ -16,5 +16,13 @@ namespace Final_Project.O.S.A
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked==false&&checkBox2.Checked==false&&checkBox3.Checked==false)
+            {
+                MessageBox.Show("Please check one of the cars", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

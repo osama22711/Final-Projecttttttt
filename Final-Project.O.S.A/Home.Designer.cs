@@ -233,7 +233,7 @@
         private System.Windows.Forms.ComboBox ReturnComboBox;
         private System.Windows.Forms.Label ReturnLabel;
         private System.Windows.Forms.CheckBox AnotherLocCheckbox;
-        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
