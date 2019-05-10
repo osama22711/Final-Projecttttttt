@@ -37,9 +37,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rental_Options1 = new Final_Project.O.S.A.Rental_Options();
             this.choose_a_car1 = new Final_Project.O.S.A.Choose_a_car();
             this.home1 = new Final_Project.O.S.A.Home();
-            this.rental_Options1 = new Final_Project.O.S.A.Rental_Options();
+            this.information1 = new Final_Project.O.S.A.Information();
+            this.confirmation1 = new Final_Project.O.S.A.Confirmation();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -84,6 +86,7 @@
             this.button5.Text = "     Confirmation";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -172,6 +175,13 @@
             this.panel2.Size = new System.Drawing.Size(748, 15);
             this.panel2.TabIndex = 1;
             // 
+            // rental_Options1
+            // 
+            this.rental_Options1.Location = new System.Drawing.Point(210, 12);
+            this.rental_Options1.Name = "rental_Options1";
+            this.rental_Options1.Size = new System.Drawing.Size(748, 536);
+            this.rental_Options1.TabIndex = 4;
+            // 
             // choose_a_car1
             // 
             this.choose_a_car1.Location = new System.Drawing.Point(210, 12);
@@ -186,18 +196,27 @@
             this.home1.Size = new System.Drawing.Size(748, 536);
             this.home1.TabIndex = 2;
             // 
-            // rental_Options1
+            // information1
             // 
-            this.rental_Options1.Location = new System.Drawing.Point(210, 12);
-            this.rental_Options1.Name = "rental_Options1";
-            this.rental_Options1.Size = new System.Drawing.Size(748, 536);
-            this.rental_Options1.TabIndex = 4;
+            this.information1.Location = new System.Drawing.Point(210, 12);
+            this.information1.Name = "information1";
+            this.information1.Size = new System.Drawing.Size(748, 536);
+            this.information1.TabIndex = 5;
+            // 
+            // confirmation1
+            // 
+            this.confirmation1.Location = new System.Drawing.Point(210, 12);
+            this.confirmation1.Name = "confirmation1";
+            this.confirmation1.Size = new System.Drawing.Size(748, 536);
+            this.confirmation1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 548);
+            this.Controls.Add(this.confirmation1);
+            this.Controls.Add(this.information1);
             this.Controls.Add(this.rental_Options1);
             this.Controls.Add(this.choose_a_car1);
             this.Controls.Add(this.home1);
@@ -227,6 +246,8 @@
         private Home home1;
         private Choose_a_car choose_a_car1;
         private Rental_Options rental_Options1;
+        private Information information1;
+        private Confirmation confirmation1;
     }
 }
 
