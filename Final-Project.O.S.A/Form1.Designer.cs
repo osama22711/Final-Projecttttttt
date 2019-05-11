@@ -42,9 +42,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.MMPanel = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MMPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -186,8 +188,9 @@
             // 
             // btn
             // 
-            this.btn.Font = new System.Drawing.Font("29LT Bukra Regular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn.Location = new System.Drawing.Point(157, 279);
+            this.btn.Font = new System.Drawing.Font("29LT Bukra Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.btn.Location = new System.Drawing.Point(158, 376);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(368, 56);
             this.btn.TabIndex = 4;
@@ -199,7 +202,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("29LT Bukra Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(153, 115);
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(154, 264);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(372, 24);
             this.label1.TabIndex = 2;
@@ -209,7 +213,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("29LT Bukra Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(180, 155);
+            this.label2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label2.Location = new System.Drawing.Point(179, 303);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(311, 16);
             this.label2.TabIndex = 3;
@@ -217,13 +222,24 @@
             // 
             // MMPanel
             // 
-            this.MMPanel.Controls.Add(this.btn);
             this.MMPanel.Controls.Add(this.label2);
             this.MMPanel.Controls.Add(this.label1);
+            this.MMPanel.Controls.Add(this.pictureBox2);
+            this.MMPanel.Controls.Add(this.btn);
             this.MMPanel.Location = new System.Drawing.Point(210, 12);
             this.MMPanel.Name = "MMPanel";
             this.MMPanel.Size = new System.Drawing.Size(748, 536);
             this.MMPanel.TabIndex = 5;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Final_Project.O.S.A.Properties.Resources.Logo;
+            this.pictureBox2.Location = new System.Drawing.Point(53, -31);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(588, 332);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -242,6 +258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.MMPanel.ResumeLayout(false);
             this.MMPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,6 +279,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Panel MMPanel;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

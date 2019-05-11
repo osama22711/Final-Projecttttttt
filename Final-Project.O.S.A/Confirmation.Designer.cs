@@ -56,11 +56,11 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.LabelPrice = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.ConfirmRentalOptions = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.ConfirmRentalPrice = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -326,16 +326,6 @@
             this.LabelPrice.Text = "35";
             this.LabelPrice.Click += new System.EventHandler(this.LabelPrice_Click);
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("29LT Bukra Regular", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(656, 351);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 14);
-            this.label17.TabIndex = 51;
-            this.label17.Text = "/Day";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -374,17 +364,27 @@
             this.ConfirmRentalPrice.TabIndex = 55;
             this.ConfirmRentalPrice.Text = "35";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("29LT Bukra Regular", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(661, 351);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(36, 14);
+            this.label17.TabIndex = 56;
+            this.label17.Text = "/Day";
+            // 
             // Confirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.ConfirmRentalPrice);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.ConfirmRentalOptions);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.LabelPrice);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.ConfirmButton);
             this.Controls.Add(this.ConfirmExp);
@@ -450,10 +450,10 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label LabelPrice;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox ConfirmRentalOptions;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label ConfirmRentalPrice;
+        private System.Windows.Forms.Label label17;
     }
 }
