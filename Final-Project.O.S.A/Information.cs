@@ -34,6 +34,13 @@ namespace Final_Project.O.S.A
             }
             else
             {
+                Form1.User1.dataGridView1.Rows[0].Cells[0].Value = InfoFname.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[1].Value = InfoLName.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[2].Value = InfoEmail.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[9].Value = InfoCardType.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[10].Value = InfoCardNumber.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[11].Value += InfoExpireMonth.Text + " / ";
+                Form1.User1.dataGridView1.Rows[0].Cells[11].Value += InfoExpireYear.Text;
                 Form1.Confirm1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.Confirm1);
                 Form1.Confirm1.BringToFront();

@@ -41,6 +41,7 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,8 @@
             this.Column8,
             this.Column9,
             this.Column10,
-            this.Column11});
+            this.Column11,
+            this.Column13});
             this.dataGridView1.Location = new System.Drawing.Point(7, 13);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1250, 632);
@@ -102,7 +104,7 @@
             // 
             // Column12
             // 
-            this.Column12.HeaderText = "Choosed car price";
+            this.Column12.HeaderText = "Total Price";
             this.Column12.Name = "Column12";
             // 
             // Column8
@@ -124,6 +126,11 @@
             // 
             this.Column11.HeaderText = "Expiration M / Y";
             this.Column11.Name = "Column11";
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "Rental Options Price";
+            this.Column13.Name = "Column13";
             // 
             // UserDatabase
             // 
@@ -152,5 +159,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
     }
 }

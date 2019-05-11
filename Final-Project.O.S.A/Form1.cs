@@ -18,6 +18,7 @@ namespace Final_Project.O.S.A
         public static Information I1 = new Information();
         public static Confirmation Confirm1 = new Confirmation();
         public static Rental_Options R1 = new Rental_Options();
+        public static UserDatabase User1 = new UserDatabase();
         public static Form1 Instance
         {
             get

@@ -14,7 +14,6 @@ namespace Final_Project.O.S.A
 {
     public partial class Choose_a_car : UserControl
     {
-        public static UserDatabase User1 = new UserDatabase();
         public Choose_a_car()
         {
             InitializeComponent();
@@ -40,27 +39,27 @@ namespace Final_Project.O.S.A
             }
             else if (checkBox1.Checked)
             {
-                User1.dataGridView1.Rows[0].Cells[5].Value = Panel1CompanyTextBox.Text;
-                User1.dataGridView1.Rows[0].Cells[6].Value = Panel1ModelTextBox.Text;
-                User1.dataGridView1.Rows[0].Cells[7].Value = Panel1Price.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[5].Value = Panel1CompanyTextBox.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[6].Value = Panel1ModelTextBox.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[7].Value = Convert.ToDouble(Panel1Price.Text.Substring(0,2));
                 Form1.R1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.R1);
                 Form1.R1.BringToFront();
             }
             else if (checkBox2.Checked)
             {
-                User1.dataGridView1.Rows[0].Cells[5].Value = Panel2CompanyTextBox.Text;
-                User1.dataGridView1.Rows[0].Cells[6].Value = Panel2ModelTextBox.Text;
-                User1.dataGridView1.Rows[0].Cells[7].Value = Panel2Price.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[5].Value = Panel2CompanyTextBox.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[6].Value = Panel2ModelTextBox.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[7].Value = Panel2Price.Text;
                 Form1.R1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.R1);
                 Form1.R1.BringToFront();
             }
             else if (checkBox3.Checked)
             {
-                User1.dataGridView1.Rows[0].Cells[5].Value = Panel3CompanyTextBox.Text;
-                User1.dataGridView1.Rows[0].Cells[6].Value = Panel3ModelTextBox.Text;
-                User1.dataGridView1.Rows[0].Cells[7].Value = Panel3Price.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[5].Value = Panel3CompanyTextBox.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[6].Value = Panel3ModelTextBox.Text;
+                Form1.User1.dataGridView1.Rows[0].Cells[7].Value = Panel3Price.Text;
                 Form1.R1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.R1);
                 Form1.R1.BringToFront();
@@ -135,6 +134,11 @@ namespace Final_Project.O.S.A
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Choose_a_car_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = "Mercedes";
         }
     }
 }

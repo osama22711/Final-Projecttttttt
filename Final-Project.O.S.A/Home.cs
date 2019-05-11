@@ -114,16 +114,15 @@ namespace Final_Project.O.S.A
             }
             else
             {
-                UserDatabase User1 = new UserDatabase();
-                User1.dataGridView1.Rows.Add(1);
-                User1.dataGridView1.Rows[0].Cells[3].Value = PickupComboBox.Text;
+                Form1.User1.dataGridView1.Rows.Add(1);
+                Form1.User1.dataGridView1.Rows[0].Cells[3].Value = PickupComboBox.Text;
                 if(AnotherLocCheckbox.Checked==true)
                 {
-                    User1.dataGridView1.Rows[0].Cells[4].Value = ReturnComboBox;
+                    Form1.User1.dataGridView1.Rows[0].Cells[4].Value = ReturnComboBox.Text;
                 }
                 else
                 {
-                    User1.dataGridView1.Rows[0].Cells[4].Value = PickupComboBox;
+                    Form1.User1.dataGridView1.Rows[0].Cells[4].Value = PickupComboBox.Text;
                 }
                 Form1.c1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.c1);

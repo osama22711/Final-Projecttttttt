@@ -42,7 +42,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.Extras4Checkbox = new System.Windows.Forms.CheckBox();
+            this.Extras4Checkbutton = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.ExtrasButton = new System.Windows.Forms.Button();
@@ -127,6 +127,7 @@
             this.Extras1Checkbutton.TabIndex = 23;
             this.Extras1Checkbutton.Text = "$3.34/Day ";
             this.Extras1Checkbutton.UseVisualStyleBackColor = true;
+            this.Extras1Checkbutton.CheckedChanged += new System.EventHandler(this.Extras1Checkbutton_CheckedChanged);
             // 
             // Extras2Checkbutton
             // 
@@ -200,16 +201,16 @@
             this.label11.TabIndex = 32;
             this.label11.Text = "Equipment and Services :";
             // 
-            // Extras4Checkbox
+            // Extras4Checkbutton
             // 
-            this.Extras4Checkbox.AutoSize = true;
-            this.Extras4Checkbox.Font = new System.Drawing.Font("29LT Bukra Regular", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Extras4Checkbox.Location = new System.Drawing.Point(476, 421);
-            this.Extras4Checkbox.Name = "Extras4Checkbox";
-            this.Extras4Checkbox.Size = new System.Drawing.Size(67, 18);
-            this.Extras4Checkbox.TabIndex = 36;
-            this.Extras4Checkbox.Text = "Market";
-            this.Extras4Checkbox.UseVisualStyleBackColor = true;
+            this.Extras4Checkbutton.AutoSize = true;
+            this.Extras4Checkbutton.Font = new System.Drawing.Font("29LT Bukra Regular", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Extras4Checkbutton.Location = new System.Drawing.Point(476, 421);
+            this.Extras4Checkbutton.Name = "Extras4Checkbutton";
+            this.Extras4Checkbutton.Size = new System.Drawing.Size(67, 18);
+            this.Extras4Checkbutton.TabIndex = 36;
+            this.Extras4Checkbutton.Text = "Market";
+            this.Extras4Checkbutton.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -295,7 +296,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ExtrasButton);
-            this.Controls.Add(this.Extras4Checkbox);
+            this.Controls.Add(this.Extras4Checkbutton);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox4);
@@ -347,7 +348,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.CheckBox Extras4Checkbox;
+        private System.Windows.Forms.CheckBox Extras4Checkbutton;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button ExtrasButton;

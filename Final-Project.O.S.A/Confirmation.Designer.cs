@@ -36,7 +36,7 @@
             this.ConfirmFname = new System.Windows.Forms.TextBox();
             this.ConfirmLname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ConfrimEmail = new System.Windows.Forms.TextBox();
+            this.ConfirmEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ConfirmCarCompany = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,14 +46,21 @@
             this.label9 = new System.Windows.Forms.Label();
             this.ConfirmReturn = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.ConfrimCardType = new System.Windows.Forms.TextBox();
+            this.ConfirmCardType = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.ConfirmCardNumber = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.ConfrimExpMonth = new System.Windows.Forms.TextBox();
+            this.ConfirmExp = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.ConfirmExpYear = new System.Windows.Forms.TextBox();
             this.ConfirmButton = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.LabelPrice = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.ConfirmRentalOptions = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.ConfirmRentalPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,13 +140,13 @@
             this.label2.TabIndex = 28;
             this.label2.Text = "Last Name :";
             // 
-            // ConfrimEmail
+            // ConfirmEmail
             // 
-            this.ConfrimEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfrimEmail.Location = new System.Drawing.Point(241, 141);
-            this.ConfrimEmail.Name = "ConfrimEmail";
-            this.ConfrimEmail.Size = new System.Drawing.Size(206, 13);
-            this.ConfrimEmail.TabIndex = 31;
+            this.ConfirmEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ConfirmEmail.Location = new System.Drawing.Point(241, 141);
+            this.ConfirmEmail.Name = "ConfirmEmail";
+            this.ConfirmEmail.Size = new System.Drawing.Size(206, 13);
+            this.ConfirmEmail.TabIndex = 31;
             // 
             // label3
             // 
@@ -154,7 +161,7 @@
             // ConfirmCarCompany
             // 
             this.ConfirmCarCompany.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfirmCarCompany.Location = new System.Drawing.Point(241, 297);
+            this.ConfirmCarCompany.Location = new System.Drawing.Point(241, 290);
             this.ConfirmCarCompany.Name = "ConfirmCarCompany";
             this.ConfirmCarCompany.Size = new System.Drawing.Size(206, 13);
             this.ConfirmCarCompany.TabIndex = 33;
@@ -163,7 +170,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("29LT Bukra Regular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(42, 292);
+            this.label4.Location = new System.Drawing.Point(42, 285);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(193, 18);
             this.label4.TabIndex = 32;
@@ -172,7 +179,7 @@
             // ConfirmCarModel
             // 
             this.ConfirmCarModel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfirmCarModel.Location = new System.Drawing.Point(241, 344);
+            this.ConfirmCarModel.Location = new System.Drawing.Point(241, 363);
             this.ConfirmCarModel.Name = "ConfirmCarModel";
             this.ConfirmCarModel.Size = new System.Drawing.Size(206, 13);
             this.ConfirmCarModel.TabIndex = 35;
@@ -181,7 +188,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("29LT Bukra Regular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(42, 339);
+            this.label8.Location = new System.Drawing.Point(42, 358);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(168, 18);
             this.label8.TabIndex = 34;
@@ -190,7 +197,7 @@
             // ConfirmPickup
             // 
             this.ConfirmPickup.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfirmPickup.Location = new System.Drawing.Point(241, 387);
+            this.ConfirmPickup.Location = new System.Drawing.Point(241, 406);
             this.ConfirmPickup.Name = "ConfirmPickup";
             this.ConfirmPickup.Size = new System.Drawing.Size(206, 13);
             this.ConfirmPickup.TabIndex = 37;
@@ -199,7 +206,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("29LT Bukra Regular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(42, 382);
+            this.label9.Location = new System.Drawing.Point(42, 401);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(135, 18);
             this.label9.TabIndex = 36;
@@ -208,7 +215,7 @@
             // ConfirmReturn
             // 
             this.ConfirmReturn.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfirmReturn.Location = new System.Drawing.Point(241, 427);
+            this.ConfirmReturn.Location = new System.Drawing.Point(241, 446);
             this.ConfirmReturn.Name = "ConfirmReturn";
             this.ConfirmReturn.Size = new System.Drawing.Size(206, 13);
             this.ConfirmReturn.TabIndex = 39;
@@ -217,19 +224,19 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("29LT Bukra Regular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(42, 422);
+            this.label10.Location = new System.Drawing.Point(42, 441);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(139, 18);
             this.label10.TabIndex = 38;
             this.label10.Text = "Return Location :";
             // 
-            // ConfrimCardType
+            // ConfirmCardType
             // 
-            this.ConfrimCardType.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfrimCardType.Location = new System.Drawing.Point(241, 177);
-            this.ConfrimCardType.Name = "ConfrimCardType";
-            this.ConfrimCardType.Size = new System.Drawing.Size(206, 13);
-            this.ConfrimCardType.TabIndex = 41;
+            this.ConfirmCardType.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ConfirmCardType.Location = new System.Drawing.Point(241, 177);
+            this.ConfirmCardType.Name = "ConfirmCardType";
+            this.ConfirmCardType.Size = new System.Drawing.Size(206, 13);
+            this.ConfirmCardType.TabIndex = 41;
             // 
             // label11
             // 
@@ -259,13 +266,13 @@
             this.label12.TabIndex = 42;
             this.label12.Text = "Card Number :";
             // 
-            // ConfrimExpMonth
+            // ConfirmExp
             // 
-            this.ConfrimExpMonth.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfrimExpMonth.Location = new System.Drawing.Point(241, 252);
-            this.ConfrimExpMonth.Name = "ConfrimExpMonth";
-            this.ConfrimExpMonth.Size = new System.Drawing.Size(100, 13);
-            this.ConfrimExpMonth.TabIndex = 45;
+            this.ConfirmExp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ConfirmExp.Location = new System.Drawing.Point(241, 252);
+            this.ConfirmExp.Name = "ConfirmExp";
+            this.ConfirmExp.Size = new System.Drawing.Size(206, 13);
+            this.ConfirmExp.TabIndex = 45;
             // 
             // label13
             // 
@@ -276,14 +283,6 @@
             this.label13.Size = new System.Drawing.Size(134, 18);
             this.label13.TabIndex = 44;
             this.label13.Text = "Expiration M/Y :";
-            // 
-            // ConfirmExpYear
-            // 
-            this.ConfirmExpYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfirmExpYear.Location = new System.Drawing.Point(347, 252);
-            this.ConfirmExpYear.Name = "ConfirmExpYear";
-            this.ConfirmExpYear.Size = new System.Drawing.Size(100, 13);
-            this.ConfirmExpYear.TabIndex = 46;
             // 
             // ConfirmButton
             // 
@@ -296,17 +295,103 @@
             this.ConfirmButton.UseVisualStyleBackColor = true;
             this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("29LT Bukra Regular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(533, 309);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(143, 24);
+            this.label14.TabIndex = 48;
+            this.label14.Text = "TOTAL PRICE";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(535, 351);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(29, 31);
+            this.label15.TabIndex = 49;
+            this.label15.Text = "$";
+            // 
+            // LabelPrice
+            // 
+            this.LabelPrice.AutoSize = true;
+            this.LabelPrice.Font = new System.Drawing.Font("29LT Bukra Regular", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPrice.Location = new System.Drawing.Point(557, 341);
+            this.LabelPrice.Name = "LabelPrice";
+            this.LabelPrice.Size = new System.Drawing.Size(62, 46);
+            this.LabelPrice.TabIndex = 50;
+            this.LabelPrice.Text = "35";
+            this.LabelPrice.Click += new System.EventHandler(this.LabelPrice_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("29LT Bukra Regular", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(656, 351);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(36, 14);
+            this.label17.TabIndex = 51;
+            this.label17.Text = "/Day";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("29LT Bukra Regular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(42, 321);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(139, 18);
+            this.label16.TabIndex = 52;
+            this.label16.Text = "Rental Options : ";
+            // 
+            // ConfirmRentalOptions
+            // 
+            this.ConfirmRentalOptions.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ConfirmRentalOptions.Location = new System.Drawing.Point(241, 326);
+            this.ConfirmRentalOptions.Name = "ConfirmRentalOptions";
+            this.ConfirmRentalOptions.Size = new System.Drawing.Size(206, 13);
+            this.ConfirmRentalOptions.TabIndex = 53;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(612, 364);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(15, 16);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "+";
+            // 
+            // ConfirmRentalPrice
+            // 
+            this.ConfirmRentalPrice.AutoSize = true;
+            this.ConfirmRentalPrice.Font = new System.Drawing.Font("29LT Bukra Regular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmRentalPrice.Location = new System.Drawing.Point(625, 364);
+            this.ConfirmRentalPrice.Name = "ConfirmRentalPrice";
+            this.ConfirmRentalPrice.Size = new System.Drawing.Size(25, 18);
+            this.ConfirmRentalPrice.TabIndex = 55;
+            this.ConfirmRentalPrice.Text = "35";
+            // 
             // Confirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ConfirmRentalPrice);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.ConfirmRentalOptions);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.LabelPrice);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.ConfirmButton);
-            this.Controls.Add(this.ConfirmExpYear);
-            this.Controls.Add(this.ConfrimExpMonth);
+            this.Controls.Add(this.ConfirmExp);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.ConfirmCardNumber);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.ConfrimCardType);
+            this.Controls.Add(this.ConfirmCardType);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.ConfirmReturn);
             this.Controls.Add(this.label10);
@@ -316,7 +401,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ConfirmCarCompany);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.ConfrimEmail);
+            this.Controls.Add(this.ConfirmEmail);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ConfirmLname);
             this.Controls.Add(this.label2);
@@ -328,6 +413,7 @@
             this.Controls.Add(this.label5);
             this.Name = "Confirmation";
             this.Size = new System.Drawing.Size(748, 536);
+            this.Load += new System.EventHandler(this.Confirmation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -344,7 +430,7 @@
         private System.Windows.Forms.TextBox ConfirmFname;
         private System.Windows.Forms.TextBox ConfirmLname;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox ConfrimEmail;
+        private System.Windows.Forms.TextBox ConfirmEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox ConfirmCarCompany;
         private System.Windows.Forms.Label label4;
@@ -354,13 +440,20 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox ConfirmReturn;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox ConfrimCardType;
+        private System.Windows.Forms.TextBox ConfirmCardType;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox ConfirmCardNumber;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox ConfrimExpMonth;
+        private System.Windows.Forms.TextBox ConfirmExp;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox ConfirmExpYear;
         private System.Windows.Forms.Button ConfirmButton;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label LabelPrice;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox ConfirmRentalOptions;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label ConfirmRentalPrice;
     }
 }
