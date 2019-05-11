@@ -15,10 +15,7 @@ namespace Final_Project.O.S.A
         public CarsDatabase()
         {
             InitializeComponent();
-        }
 
-        public void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
             ///////////////////////////////////////////////////////////////////
             //BMW S ///////////// ////////// //////////////// ///////////// ///
             ///////////////////////////////////////////////////////////////////
@@ -74,6 +71,14 @@ namespace Final_Project.O.S.A
             dataGridView1.Rows[8].Cells[1].Value = "Fusion-1";
             dataGridView1.Rows[8].Cells[2].Value = "50$/Day";
             dataGridView1.Rows[8].Cells[3].Value = Properties.Resources.Ford_Fusion_1;
+        }
+
+        public void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        public  void CarsDatabase_Load(object sender, EventArgs e)
+        {
         }
     }
 }

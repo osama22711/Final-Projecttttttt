@@ -41,9 +41,10 @@
             this.btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.home1 = new Final_Project.O.S.A.Home();
+            this.MMPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.MMPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -186,7 +187,7 @@
             // btn
             // 
             this.btn.Font = new System.Drawing.Font("29LT Bukra Regular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn.Location = new System.Drawing.Point(394, 311);
+            this.btn.Location = new System.Drawing.Point(157, 279);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(368, 56);
             this.btn.TabIndex = 4;
@@ -198,7 +199,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("29LT Bukra Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(390, 147);
+            this.label1.Location = new System.Drawing.Point(153, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(372, 24);
             this.label1.TabIndex = 2;
@@ -208,28 +209,28 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("29LT Bukra Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(417, 187);
+            this.label2.Location = new System.Drawing.Point(180, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(311, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Please procceed by pressing the button below";
             // 
-            // home1
+            // MMPanel
             // 
-            this.home1.Location = new System.Drawing.Point(210, 12);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(748, 536);
-            this.home1.TabIndex = 5;
+            this.MMPanel.Controls.Add(this.btn);
+            this.MMPanel.Controls.Add(this.label2);
+            this.MMPanel.Controls.Add(this.label1);
+            this.MMPanel.Location = new System.Drawing.Point(210, 12);
+            this.MMPanel.Name = "MMPanel";
+            this.MMPanel.Size = new System.Drawing.Size(748, 536);
+            this.MMPanel.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 548);
-            this.Controls.Add(this.home1);
-            this.Controls.Add(this.btn);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.MMPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -239,8 +240,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.MMPanel.ResumeLayout(false);
+            this.MMPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -254,12 +256,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel SidePanel;
+        public  System.Windows.Forms.Panel SidePanel;
         public System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Home home1;
+        public System.Windows.Forms.Panel MMPanel;
     }
 }
 

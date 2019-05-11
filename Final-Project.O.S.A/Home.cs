@@ -90,7 +90,7 @@ namespace Final_Project.O.S.A
 
         }
 
-        private void btn_Click(object sender, EventArgs e)
+       /* private void btn_Click(object sender, EventArgs e)
         {
             if (PickupComboBox.Text == "")
             {
@@ -104,7 +104,7 @@ namespace Final_Project.O.S.A
             }
             Form1.Instance.PnlContainer.Controls["Choose a car"].BringToFront();
             Form1.Instance.BackButton.Visible = true;
-        }
+        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -112,14 +112,23 @@ namespace Final_Project.O.S.A
             {
                 MessageBox.Show("Please enter all your information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!Form1.Instance.PnlContainer.Controls.ContainsKey("Choose a car"))
+            else
             {
-                Choose_a_car c1 = new Choose_a_car();
-                c1.Dock = DockStyle.Fill;
-                Form1.Instance.PnlContainer.Controls.Add(c1);
+                UserDatabase User1 = new UserDatabase();
+                User1.dataGridView1.Rows.Add(1);
+                User1.dataGridView1.Rows[0].Cells[3].Value = PickupComboBox.Text;
+                if(AnotherLocCheckbox.Checked==true)
+                {
+                    User1.dataGridView1.Rows[0].Cells[4].Value = ReturnComboBox;
+                }
+                else
+                {
+                    User1.dataGridView1.Rows[0].Cells[4].Value = PickupComboBox;
+                }
+                Form1.c1.Dock = DockStyle.Fill;
+                Form1.Instance.MMPanel.Controls.Add(Form1.c1);
+                Form1.c1.BringToFront();
             }
-            //Form1.Instance.PnlContainer.Controls["Choose a car"].BringToFront();
-            Form1.Instance.BackButton.Visible = true;
         }
     }
 }

@@ -16,5 +16,11 @@ namespace Final_Project.O.S.A
         {
             InitializeComponent();
         }
+
+        private void ConfirmButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("We Will be sending you an email!");
+            Form1.h1.BringToFront();
+        }
     }
 }

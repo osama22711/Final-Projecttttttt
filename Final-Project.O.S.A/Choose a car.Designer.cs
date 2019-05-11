@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.home1 = new Final_Project.O.S.A.Home();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,6 +55,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Panel1PictureBox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Panel1Price = new System.Windows.Forms.TextBox();
+            this.Panel2Price = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Panel3Price = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.home1 = new Final_Project.O.S.A.Home();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Panel3PictureBox)).BeginInit();
             this.panel2.SuspendLayout();
@@ -63,13 +70,6 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Panel1PictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // home1
-            // 
-            this.home1.Location = new System.Drawing.Point(256, 118);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(8, 8);
-            this.home1.TabIndex = 0;
             // 
             // label7
             // 
@@ -123,6 +123,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Panel3Price);
+            this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.checkBox3);
             this.panel1.Controls.Add(this.Panel3PictureBox);
             this.panel1.Controls.Add(this.Panel3ModelTextBox);
@@ -149,6 +151,7 @@
             this.Panel3PictureBox.Location = new System.Drawing.Point(19, 14);
             this.Panel3PictureBox.Name = "Panel3PictureBox";
             this.Panel3PictureBox.Size = new System.Drawing.Size(189, 131);
+            this.Panel3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Panel3PictureBox.TabIndex = 2;
             this.Panel3PictureBox.TabStop = false;
             // 
@@ -190,6 +193,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.Panel2Price);
+            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.checkBox2);
             this.panel2.Controls.Add(this.Panel2PictureBox);
             this.panel2.Controls.Add(this.Panel2ModelTextBox);
@@ -210,12 +215,14 @@
             this.checkBox2.TabIndex = 10;
             this.checkBox2.Text = "Select";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // Panel2PictureBox
             // 
             this.Panel2PictureBox.Location = new System.Drawing.Point(19, 14);
             this.Panel2PictureBox.Name = "Panel2PictureBox";
             this.Panel2PictureBox.Size = new System.Drawing.Size(189, 131);
+            this.Panel2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Panel2PictureBox.TabIndex = 1;
             this.Panel2PictureBox.TabStop = false;
             // 
@@ -257,6 +264,8 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.Panel1Price);
+            this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.checkBox1);
             this.panel3.Controls.Add(this.Panel1ModelTextBox);
             this.panel3.Controls.Add(this.label3);
@@ -277,6 +286,7 @@
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Select";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Panel1ModelTextBox
             // 
@@ -319,6 +329,7 @@
             this.Panel1PictureBox.Location = new System.Drawing.Point(19, 14);
             this.Panel1PictureBox.Name = "Panel1PictureBox";
             this.Panel1PictureBox.Size = new System.Drawing.Size(189, 131);
+            this.Panel1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Panel1PictureBox.TabIndex = 0;
             this.Panel1PictureBox.TabStop = false;
             // 
@@ -333,10 +344,82 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("29LT Bukra Regular", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(47, 213);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 16);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Price :";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // Panel1Price
+            // 
+            this.Panel1Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Panel1Price.Location = new System.Drawing.Point(100, 215);
+            this.Panel1Price.Name = "Panel1Price";
+            this.Panel1Price.Size = new System.Drawing.Size(100, 13);
+            this.Panel1Price.TabIndex = 7;
+            // 
+            // Panel2Price
+            // 
+            this.Panel2Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Panel2Price.Location = new System.Drawing.Point(108, 216);
+            this.Panel2Price.Name = "Panel2Price";
+            this.Panel2Price.Size = new System.Drawing.Size(100, 13);
+            this.Panel2Price.TabIndex = 9;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("29LT Bukra Regular", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(55, 214);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 16);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Price :";
+            // 
+            // Panel3Price
+            // 
+            this.Panel3Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Panel3Price.Location = new System.Drawing.Point(108, 217);
+            this.Panel3Price.Name = "Panel3Price";
+            this.Panel3Price.Size = new System.Drawing.Size(100, 13);
+            this.Panel3Price.TabIndex = 12;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("29LT Bukra Regular", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(55, 215);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(47, 16);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Price :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(249, 88);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(241, 13);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Available companies : BMW - Mercedes - Ford -->";
+            // 
+            // home1
+            // 
+            this.home1.Location = new System.Drawing.Point(256, 118);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(8, 8);
+            this.home1.TabIndex = 0;
+            // 
             // Choose_a_car
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -393,5 +476,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox Panel1PictureBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox Panel3Price;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox Panel2Price;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox Panel1Price;
+        private System.Windows.Forms.Label label14;
     }
 }

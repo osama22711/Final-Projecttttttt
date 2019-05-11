@@ -32,6 +32,12 @@ namespace Final_Project.O.S.A
             {
                 MessageBox.Show("Please read the policies", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                Form1.Confirm1.Dock = DockStyle.Fill;
+                Form1.Instance.MMPanel.Controls.Add(Form1.Confirm1);
+                Form1.Confirm1.BringToFront();
+            }
         }
     }
 }

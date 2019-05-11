@@ -240,6 +240,7 @@
             this.ExtrasButton.TabIndex = 37;
             this.ExtrasButton.Text = "Continue";
             this.ExtrasButton.UseVisualStyleBackColor = true;
+            this.ExtrasButton.Click += new System.EventHandler(this.ExtrasButton_Click);
             // 
             // pictureBox4
             // 

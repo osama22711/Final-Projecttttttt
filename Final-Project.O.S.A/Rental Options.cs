@@ -16,5 +16,12 @@ namespace Final_Project.O.S.A
         {
             InitializeComponent();
         }
+
+        private void ExtrasButton_Click(object sender, EventArgs e)
+        {
+            Form1.I1.Dock = DockStyle.Fill;
+            Form1.Instance.MMPanel.Controls.Add(Form1.I1);
+            Form1.I1.BringToFront();
+        }
     }
 }
