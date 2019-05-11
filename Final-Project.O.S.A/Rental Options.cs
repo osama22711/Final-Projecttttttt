@@ -66,6 +66,8 @@ namespace Final_Project.O.S.A
             Form1.I1.Dock = DockStyle.Fill;
             Form1.Instance.MMPanel.Controls.Add(Form1.I1);
             Form1.I1.BringToFront();
+            Form1.Instance.SidePanel.Height = Form1.Instance.button4.Height;
+            Form1.Instance.SidePanel.Top = Form1.Instance.button4.Top;
         }
 
         private void Extras1Checkbutton_CheckedChanged(object sender, EventArgs e)

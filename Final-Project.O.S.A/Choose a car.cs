@@ -45,6 +45,8 @@ namespace Final_Project.O.S.A
                 Form1.R1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.R1);
                 Form1.R1.BringToFront();
+                Form1.Instance.SidePanel.Height = Form1.Instance.button3.Height;
+                Form1.Instance.SidePanel.Top = Form1.Instance.button3.Top;
             }
             else if (checkBox2.Checked)
             {
@@ -54,6 +56,8 @@ namespace Final_Project.O.S.A
                 Form1.R1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.R1);
                 Form1.R1.BringToFront();
+                Form1.Instance.SidePanel.Height = Form1.Instance.button3.Height;
+                Form1.Instance.SidePanel.Top = Form1.Instance.button3.Top;
             }
             else if (checkBox3.Checked)
             {
@@ -63,6 +67,8 @@ namespace Final_Project.O.S.A
                 Form1.R1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.R1);
                 Form1.R1.BringToFront();
+                Form1.Instance.SidePanel.Height = Form1.Instance.button3.Height;
+                Form1.Instance.SidePanel.Top = Form1.Instance.button3.Top;
             }
         }
 

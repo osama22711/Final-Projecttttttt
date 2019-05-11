@@ -268,18 +268,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        public  System.Windows.Forms.Panel SidePanel;
         public System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Panel MMPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Panel SidePanel;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Button button5;
     }
 }
 

@@ -127,6 +127,8 @@ namespace Final_Project.O.S.A
                 Form1.c1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.c1);
                 Form1.c1.BringToFront();
+                Form1.Instance.SidePanel.Height = Form1.Instance.button2.Height;
+                Form1.Instance.SidePanel.Top = Form1.Instance.button2.Top;
             }
         }
     }

@@ -44,6 +44,8 @@ namespace Final_Project.O.S.A
                 Form1.Confirm1.Dock = DockStyle.Fill;
                 Form1.Instance.MMPanel.Controls.Add(Form1.Confirm1);
                 Form1.Confirm1.BringToFront();
+                Form1.Instance.SidePanel.Height = Form1.Instance.button5.Height;
+                Form1.Instance.SidePanel.Top = Form1.Instance.button5.Top;
             }
         }
     }

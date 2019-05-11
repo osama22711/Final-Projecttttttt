@@ -21,6 +21,8 @@ namespace Final_Project.O.S.A
         {
             MessageBox.Show("We Will be sending you an email!");
             Form1.h1.BringToFront();
+            Form1.Instance.SidePanel.Height = Form1.Instance.button1.Height;
+            Form1.Instance.SidePanel.Top = Form1.Instance.button1.Top;
         }
 
         private void Confirmation_Load(object sender, EventArgs e)
